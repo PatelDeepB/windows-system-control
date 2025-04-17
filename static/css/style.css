@@ -1,0 +1,44 @@
+body, html {
+    height: 100%;
+    margin: 0;
+    overflow: hidden;
+    position: relative; /* Assure que les éléments positionnés à l'intérieur sont positionnés par rapport à ce conteneur */
+}
+
+#autofocusInput {
+    width: 150%; /* to compensate the left: -100px; side effect */
+    height: 100%;
+    font-size: 1em;
+    position: absolute;
+    top: 0;
+    left: -100px;
+    opacity: 0;
+    -webkit-opacity: 0.02; /* To make keyboard show in iphone */ 
+    cursor: default;
+    padding-top: 180px;
+}
+#autofocusInput:focus {
+    border-color: transparent; /* transparent when focus */
+    outline: none !important; /* deactivate outline */
+}
+#screenImage {
+    /*for tablets, screens should always be either squars or rectangle waqef!*/
+    object-fit: contain;
+    height:auto;
+    max-height: 90vh;
+    top: 0;
+    left: 0;
+    opacity: 1; /* Ajuste l'opacité selon vos préférences */
+    max-width: 100%;
+    display: block;
+}
+#loader{
+    position: fixed;
+    left: 0px;
+    top: 0px;
+    width: 100%;
+    height: 100%;
+    z-index: 9999;
+    background: url('../images/loading.gif') 
+                50% 50% no-repeat rgb(249,249,249);
+}

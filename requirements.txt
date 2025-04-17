@@ -1,0 +1,16 @@
+#cross check and modify/add/remove packages
+#Python==3.7.11
+#pip3
+
+flask==3.0.1
+flask_socketio==5.3.6
+flask_cors==4.0.0
+pyautogui==0.9.54
+mss==9.0.1
+pillow==10.2.0
+#PIL
+#io
+#base64
+#time
+#tkinter
+#sys
