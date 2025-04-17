@@ -1,31 +1,39 @@
-# 🖥️ Sample Flask-Tkinter App for Windows System Control
+# 🖥️ pyRD - Python Remote Desktop Control Tool
 
-This project is a simple yet powerful hybrid application built using **Flask** and **Tkinter**. It allows you to **control and monitor your Windows system** through a web-based interface served via Flask and a native GUI using Tkinter.
+**pyRD** is a Python-based remote desktop utility that allows you to monitor and control a Windows system remotely. It integrates Flask for web-based control, and includes various supporting modules and scripts to enable smooth desktop interaction.
 
 ---
 
 ## 📁 Project Structure
 
 ```
-sample-flask-tkinter-app/
-├── build/
-├── dist/
-├── static/
-│   └── ...        # Static web assets
-├── index.html     # Main HTML page served by Flask
-├── screen.py      # Core Python script for GUI and backend logic
-├── screen.spec    # PyInstaller spec file
-├── requirements.txt
+pyRD/
+├── build/                  # PyInstaller build files
+├── dist/                   # Final executable files
+├── templates/              # Flask HTML templates
+├── app.py                  # Main Flask app
+├── myremote.py             # Remote desktop logic handler
+├── remote.py               # Remote control implementation
+├── remote2.py              # Extended remote features
+├── remote3.py              # Additional control logic
+├── size.py                 # Screen size or resolution utilities
+├── pyRD.png                # App icon
+├── screen.bmp              # Screenshot or splash
+├── ss.png                  # GUI snapshot
+├── myremote.spec           # PyInstaller spec file
+├── LICENSE                 # Project license (MIT or custom)
+├── README.md               # This file
 ```
 
 ---
 
 ## ✨ Features
 
-- View Windows system status from a web interface.
-- Native Tkinter GUI window for local control.
-- Flask server backend to handle real-time updates.
-- Designed to be converted into a standalone executable using PyInstaller.
+- 🖥️ Web-based interface to control your system remotely
+- 🎯 Real-time screen capture and interaction
+- 🧠 Modular design with `remote.py`, `remote2.py`, `remote3.py` for extendable features
+- 📦 Easily converted to executable using PyInstaller
+- 🪟 Built for Windows systems (other OS not tested)
 
 ---
 
@@ -34,11 +42,11 @@ sample-flask-tkinter-app/
 ### 1. Clone the repository
 
 ```bash
-git clone https://github.com/yourusername/sample-flask-tkinter-app.git
-cd sample-flask-tkinter-app
+git clone https://github.com/yourusername/pyRD.git
+cd pyRD
 ```
 
-### 2. Create a virtual environment (optional but recommended)
+### 2. (Optional) Create and activate a virtual environment
 
 ```bash
 python -m venv venv
@@ -52,48 +60,61 @@ venv\Scripts\activate
 
 ```bash
 pip install -r requirements.txt
+# Or install manually if requirements.txt not available
 ```
 
-### 4. Run the application
+### 4. Run the app
 
 ```bash
-python screen.py
+python app.py
 ```
+
+Visit `http://127.0.0.1:5000` in your browser to use the web interface.
 
 ---
 
-## 🛠️ Convert to Executable (Optional)
+## 🛠️ Build Executable (Optional)
 
-Use **PyInstaller** to package the application as a Windows executable:
+To create a standalone Windows `.exe`:
 
 ```bash
-pyinstaller screen.spec
+pyinstaller myremote.spec
 ```
 
-The final executable will be located in the `dist/` directory.
+The built executable will be located in the `dist/` directory.
 
 ---
 
-## 📷 Screenshots
+## 📸 Screenshots
 
-*(Add screenshots of your Flask interface or Tkinter app here for better presentation)*
+Here are some visuals of the application in action:
+
+- `pyRD.png` - App icon
+- `screen.bmp` - Screenshot / splash
+- `ss.png` - Web interface or GUI preview
+
+*(Add these images directly in your GitHub repo and link them here if needed)*
 
 ---
 
 ## 📄 License
 
-This project is licensed under the MIT License. See `LICENSE` for more details.
+This project is licensed under the terms of the [LICENSE](./LICENSE) file.
 
 ---
 
-## 🙌 Contributions
+## 🤝 Contributing
 
-Feel free to open issues or submit pull requests to improve the project. Suggestions and feedback are welcome!
+Pull requests are welcome. For major changes, please open an issue first to discuss what you would like to change or improve.
 
 ---
 
 ## 🔗 Author
 
-Built with ❤️ by [Deep Patel]  
-📧 Contact: deepbpatel9898@gmail.com  
-🌐 GitHub: [PatelDeepB](https://github.com/PatelDeepB)
+Built with ❤️ by [Your Name]  
+📧 Contact: your.email@example.com  
+🌐 GitHub: [yourusername](https://github.com/yourusername)
+
+---
+
+> ⚠️ **Disclaimer:** This tool is intended for educational and personal use only. Use responsibly and with appropriate permissions on target systems.
