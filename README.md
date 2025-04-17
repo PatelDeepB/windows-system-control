@@ -111,9 +111,9 @@ Pull requests are welcome. For major changes, please open an issue first to disc
 
 ## 🔗 Author
 
-Built with ❤️ by [Your Name]  
-📧 Contact: your.email@example.com  
-🌐 GitHub: [yourusername](https://github.com/yourusername)
+Built with ❤️ by [Deep Patel]  
+📧 Contact: deepbpatel9898@gmail.com  
+🌐 GitHub: [PatelDeepB](https://github.com/PatelDeepB)
 
 ---
 
